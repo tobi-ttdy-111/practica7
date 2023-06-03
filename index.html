@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 7</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <nav class="h-nav">
+            <div class="hn-title">
+                <h1>Práctica 7</h1>
+                <h3>Energía <span class="hnt-resalt">cinética</span> y energía <span class="hnt-resalt">potencial</span></h3>
+            </div>
+            <div class="hn-button">
+                <a href="#">
+                    <span>Link Github</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- main -->
+    <main class="main">
+        <div class="m-container">
+            <h2>Configuración</h2>
+            <div class="mc-content">
+                <div class="mcc-data">
+                    <p>Tipo de fricción</p>
+                    <select id="selTipo" onchange="calcularResultado();">
+                        <option value="estatica">Estática</option>
+                        <option value="dinamica">Dinámica</option>
+                    </select>
+                </div>
+                <div class="mcc-data">
+                    <p>Coeficiente de fricción <span id="actualFriccion">( actual: 1.0 )</span></p>
+                    <select id="selFriccion" onchange="calcularResultado();">
+                        <option value="0">Hule sobre concreto</option>
+                        <option value="1">Acero sobre acero</option>
+                        <option value="2">Aluminio sobre acero</option>
+                        <option value="3">Vidrio sobre vidrio</option>
+                        <option value="4">Cobre sobre acero</option>
+                        <option value="5">Madera sobre madera</option>
+                        <option value="6">Madera encerada sobre nieve húmeda</option>
+                        <option value="7">Metal sobre metal ( lubricado )</option>
+                        <option value="8">Teflón sobre teflón</option>
+                        <option value="9">Hielo sobre hielo</option>
+                        <option value="10">Articulación sinovial en humanos</option>
+                    </select>
+                </div>
+                <div class="mcc-data" aria-valuemax="89" aria-valuemin="0">
+                    <p>Ángulo de inclinación del plano (en grados)</p>
+                    <input type="number" placeholder="( 0º - 89º)" value="45" id="inpAngulo" onchange="calcularResultado();">
+                </div>
+            </div>
+        </div>
+        <div class="m-container">
+            <h2>Fórmulas y procedimiento</h2>
+            <div class="mc-content">
+                <div class="mcc-data">
+                    <p>Fórmulas</p>
+                    <div class="mccd-box">
+                        <p>tanθ = us &nbsp;&nbsp;&nbsp;&nbsp;( fricción estática )</p>
+                        <p>tanθ = uk &nbsp;&nbsp;&nbsp;&nbsp;( fricción dinámica )</p>
+                    </div>
+                </div>
+                <div class="mcc-data">
+                    <p>Despeje</p>
+                    <div class="mccd-box">
+                        <p>tan<span class="actualAngulo">θ</span> = <span class="actualCoeficiente">[ friccion ]</span></p>
+                        <p><span class="actualAngulo">θ</span> = tan⁻¹( <span class="actualCoeficiente">[ friccion ]</span> )</p>
+                        <p><span class="actualAngulo">θ</span> = <span id="actualResultado">[ resultado ]</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m-container">
+            <div class="mc-content">
+                <div class="mcc-data">
+                    <button class="mccd-button">Resultados</button>
+                </div>
+                <div class="mcc-data">
+                    <p id="resAnguloCritico"></p>
+                    <p id="resMovilidadObjeto"></p>
+                    <p id="resNota"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+        <p class="f-escuela">Escuela Superior de Cómputo</p>
+        <div class="f-integrantes">
+            <p>Equipo 5</p>
+            <p>Garduño Sánchez Moises</p>
+            <p>Giron Flores Carlos Alberto</p>
+            <p>Lopez Teran Monserrat</p>
+            <p>Ramirez Lopez Jouse</p>
+            <p>Torres Torres Daeg Yeray</p>
+        </div>
+    </footer>
+    <!-- others -->
+    <span class="linea linea1"></span>
+    <span class="linea linea2"></span>
+    <span class="linea linea3"></span>
+    <span class="linea linea4"></span>
+    <span class="linea linea5"></span>
+    <!-- scripts -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

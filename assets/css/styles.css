@@ -1,0 +1,210 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #02002F;
+    padding: 70px 100px;
+}
+
+
+.header {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 3em;
+}
+
+
+.h-nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.hn-title h1 {
+    font-family: 'Bruno Ace', cursive;
+    font-size: 60px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.hn-title h3 {
+    font-family: 'Bruno Ace', cursive;
+    font-size: 15px;
+    font-weight: 100;
+    color: #ffffff;
+}
+
+
+.hnt-resalt {
+    color: #24D5E8;
+}
+
+
+.hn-button a {
+    position: relative;
+    width: 150px;
+    height: 35px;
+    display: inline-block;
+    background: #ffffff;
+}
+.hn-button a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: #02002F;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    color: #ffffff;
+}
+.hn-button a::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient( 45deg, #24D5E8, #04e1d0 );
+    transition: .5s;
+    animation: animateButton 3s linear infinite;
+}
+
+
+.m-container h2 {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+}
+.m-container:nth-child( 3 ) {
+    margin-top: 80px;
+}
+
+
+.mc-content {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+
+.mcc-data {
+    width: 350px;
+}
+.mcc-data p {
+    color: #A4A4A4;
+    font-size: 13px;
+}
+.mcc-data select,
+.mcc-data input {
+    min-width: 120px;
+    margin-top: 5px;
+    padding: 5px;
+    background: #02002F;
+    color: #A4A4A4;
+    border: 1px solid #333;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+.mcc-data button {
+    cursor: pointer;
+    margin-top: 5px;
+    width: 290px;
+    height: 70px;
+    background: #04e1d0;
+    border: none;
+    color: #02002F;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    outline: none;
+}
+
+
+.mccd-box {
+    width: 290px;
+    margin-top: 5px;
+    padding: 5px;
+    background: #02002F;
+    color: #A4A4A4;
+    border: 1px solid #333;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.f-escuela {
+    position: absolute;
+    left: 100px;
+    bottom: 70px;
+    color: #ffffff;
+    font-family: 'Bruno Ace', cursive;
+    font-size: 13px;
+}
+
+
+.f-integrantes {
+    position: absolute;
+    right: 100px;
+    bottom: 70px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    text-align: end;
+}
+
+
+.linea {
+    position: absolute;
+    background: #00508F;
+    z-index: -10;
+    opacity: .3;
+}
+.linea1 {
+    width: 2px;
+    height: 250px;
+    top: 0;
+    left: 300px;
+}
+.linea2 {
+    width: 2px;
+    height: 100vh;
+    top: 0;
+    left: 670px;
+}
+.linea3 {
+    width: 100%;
+    height: 2px;
+    top: 330px;
+    left: 0;
+}
+.linea4 {
+    width: 340px;
+    height: 2px;
+    top: 570px;
+    right: 0;
+}
+.linea5 {
+    width: 2px;
+    height: 270px;
+    top: calc( 100vh - 570px );
+    right: 100px;
+}
+
+
